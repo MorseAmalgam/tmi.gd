@@ -291,7 +291,7 @@ func refresh_token():
 	var result = await utils.fetch(
 		self,
 		"https://id.twitch.tv/oauth2/token",
-		HTTPClient.METHOD_GET,
+		HTTPClient.METHOD_POST,
 		{
 			"Content-Type": "application/x-www-form-urlencoded"
 		},
